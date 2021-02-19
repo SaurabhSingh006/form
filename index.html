@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <title>Galderma</title>
+  <!-- Link CSS Styling file -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Importing Roboto Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h3 class="heading"> Galderma International SAS</h3>
+  <p class="paragraph">Personal Data Sheet</p>
+
+  <form class="form">
+    <!-- General Information -->
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">General Information</legend>
+
+      <div class="form__fielda">
+        <label for="fullName" class="form__label">Full Legal Name:</label>
+        <input id="fullName" type="text" class="form__input" size="30">
+      </div>
+
+      <div class="form__grid-container">
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="gender" class="form__label">Gender:</label>
+            <select name="Gender" id="gender" class="form__select">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label for="nation" class="form__label">Nationality:</label>
+            <input id="nation" type="text" class="form__input">
+          </div>
+
+          <div class="form__field">
+            <label for="uaeCard" class="form__label">UAE Labor Card #:</label>
+            <input id="uaeCard" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="location" class="form__label">Location</label>
+            <input id="location" type="text" class="form__input">
+          </div>
+        </div>
+
+        <div class="form__grid-item"> 
+          <div class="form__field">
+            <label for="dob" class="form__label">Date of Birth:</label>
+            <input id="dob" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="passport" class="form__label">Passport #:</label>
+            <input id="passport" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="doh" class="form__label">Date of Hire</label>
+            <input id="doh" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="position" class="form__label">Position:</label>
+            <input id="position" type="text" class="form__input">           
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <br>
+
+    <!-- Contact Information -->
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Contact Information</legend>
+
+      <div class="form__fieldb">
+        <label for="homeAddress" class="form__label">Home Country Address:</label>
+        <input id="homeAddress" type="text" class="form__input">
+      </div>
+      <div class="form__fieldb">
+        <label for="uaeAddress" class="form__label">UAE Address:</label>
+        <input id="uaeAddress" type="text" class="form__input">
+      </div>
+
+      <div class="form__grid-container">
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="homePh" class="form__label">Home Country Phone #:</label>
+            <input id="homePh" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="uaePh" class="form__label">UAE Mobile Phone #:</label>
+            <input id="uaePh" type="text" class="form__input">
+          </div>
+        </div>
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="uaeHomePh" class="form__label">UAE Home Phone #:</label>
+            <input id="uaeHomePh" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="email" class="form__label">Email Address:</label>
+            <input id="email" type="email" class="form__input">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <br>
+
+    <!-- Family Status -->
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Family Status</legend>
+
+      <div class="form__grid-container">
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="maritial" class="form__label">Maritial Status:</label>
+            <select name="Maritial Status" id="maritial" class="form__select">
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="spouseName" class="form__label">Spouse's Name:</label>
+            <input id="spouseName" type="text" class="form__input">
+          </div>
+        </div>
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="children" class="form__label">Children</label>
+            <select name="children" id="children" class="form__select">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="iban" class="form__label">IBAN:</label>
+            <input id="iban" type="text" class="form__input">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Emergency Contact -->
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Emergency Contact</legend>
+
+      <div class="form__grid-container">
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="name" class="form__label">Name:</label>
+            <input id="name" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="eAddress" class="form__label">Address:</label>
+            <input id="eAddress" type="text" class="form__input">
+          </div>
+        </div>
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="relation" class="form__label">Relationship:</label>
+            <input id="relation" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="ePhone" class="form__label">Phone #:</label>
+            <input id="ePhone" type="text" class="form__input">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <br>
+
+    <!-- Banking Information -->
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Banking Information</legend>
+
+      <div class="form__grid-container">
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="bName" class="form__label">Bank name:</label>
+            <input id="bName" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="account" class="form__label">Account #:</label>
+            <input id="account" type="text" class="form__input">
+          </div>
+        </div>
+        <div class="form__grid-item">
+          <div class="form__field">
+            <label for="branch" class="form__label">Branch:</label>
+            <input id="branch" type="text" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="iban" class="form__label">IBAN:</label>
+            <input id="iban" type="text" class="form__input">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>

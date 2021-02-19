@@ -1,0 +1,102 @@
+:root {
+  --black: #000000;
+  --white: #ffffff; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 1000px) {
+    html {
+      font-size: 56%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 800px) {
+    html {
+      font-size: 45%; } }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.heading {
+  text-decoration: underline;
+  font-size: 2.2rem;
+  text-align: center; }
+
+.paragraph {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.8rem; }
+
+.form {
+  width: 80%;
+  background-color: var(--white); }
+  @media (max-width: 1200px) {
+    .form {
+      width: 85%; } }
+  @media (max-width: 768px) {
+    .form {
+      width: 95%; } }
+  .form__fieldset {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; }
+  .form__legend {
+    font-size: 2.2rem;
+    font-weight: 700; }
+  .form__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0rem; }
+  .form__fielda {
+    padding: .5rem 0rem; }
+  .form__fieldb {
+    width: 50%;
+    padding: .5rem 0rem;
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 1200px) {
+      .form__fieldb {
+        width: 60%; } }
+    @media (max-width: 950px) {
+      .form__fieldb {
+        width: 100%; } }
+  .form__grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 2rem; }
+    @media (max-width: 950px) {
+      .form__grid-container {
+        gap: 0rem;
+        grid-template-columns: 1fr; } }
+  .form__grid-item {
+    display: flex;
+    flex-direction: column; }
+  .form__label {
+    font-size: 1.8rem;
+    font-weight: 500; }
+  .form__input, .form__select {
+    font-size: 1.8rem;
+    font-weight: 500;
+    outline: none; }
+  .form__select {
+    width: 46%; }
+    @media (max-width: 950px) {
+      .form__select {
+        width: 30%; } }
